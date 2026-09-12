@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Route Not Found | TGW Software</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(20, 184, 166, 0.15), transparent 70%);
+    }
+    .grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased min-h-screen flex flex-col justify-between p-6 sm:p-10 relative selection:bg-teal-500 selection:text-white">
+
+  <div class="fixed inset-0 gradient-glow pointer-events-none z-0"></div>
+  <div class="fixed inset-0 grid-pattern pointer-events-none z-0"></div>
+
+  <!-- Header -->
+  <div class="relative z-10 flex items-center space-x-3">
+    <div class="w-9 h-9 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 font-bold font-mono text-sm">
+      &lt;/&gt;
+    </div>
+    <span class="text-base font-extrabold tracking-tight text-white">TGW Software</span>
+  </div>
+
+  <!-- Main Error Message -->
+  <main class="relative z-10 max-w-lg mx-auto text-center my-auto py-16">
+    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-500/30 text-red-400 text-xs font-mono mb-6">
+      <span class="w-2 h-2 rounded-full bg-red-400"></span>
+      <span>HTTP 404 // Target Route Unresolved</span>
+    </div>
+    <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight text-white mb-4 font-mono">
+      PAGE_NOT_FOUND
+    </h1>
+    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+      The requested endpoint or document does not exist, has been moved, or is undergoing internal maintenance.
+    </p>
+    <a href="/" class="inline-flex items-center space-x-2 bg-teal-500 hover:bg-teal-400 text-gray-950 px-6 py-3 rounded-lg font-bold font-mono text-sm transition shadow-lg shadow-teal-500/10">
+      <span>&larr; Return to Base URL</span>
+    </a>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 text-center text-xs text-gray-600 font-mono">
+    &copy; 2026 TGW Software (Pty) Ltd. Registered in South Africa.
+  </footer>
+
+</body>
+</html>
