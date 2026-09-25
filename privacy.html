@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Rounds | TGW Software</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --text: #c9d1d9;
+      --heading: #f0f6fc;
+      --accent: #8b5cf6;
+      --border: #30363d;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 40px;
+    }
+    h1, h2, h3 {
+      color: var(--heading);
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      color: #8b949e;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(139, 92, 246, 0.15);
+      color: #a78bfa;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Store Compliance Specification</div>
+    <h1>Privacy Policy for Rounds</h1>
+    <div class="subtitle">Operated by TGW Software &bull; Effective Date: September 26, 2026</div>
+
+    <p>
+      TGW Software ("we", "our", or "us") provides <strong>Rounds</strong>, a private circle check-in and nightlife safety coordination application. This Privacy Policy details how we collect, store, and process your personal information when using our mobile application and related services.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>To deliver core social and safety coordination features, Rounds collects the following categories of data:</p>
+    <ul>
+      <li><strong>Account Identification:</strong> When registering, we collect your email address, username, and generate a unique 6-character user code (Short ID) to enable peer-to-peer circle invitations without sharing private contact information.</li>
+      <li><strong>Circle & Activity Data:</strong> Check-in event timestamps, venue names, drink count pacing records, and safe arrival status transitions submitted during active sessions.</li>
+      <li><strong>Device Push Tokens:</strong> Hardware and Expo push notification tokens required to deliver real-time arrival alerts, venue check-ins, and circle invites across your trusted groups.</li>
+      <li><strong>Location Data (Optional):</strong> If explicitly permitted, foreground location coordinates are accessed solely to surface nearby venue suggestions upon manual check-in. Rounds does not run continuous background location tracking or sell location history.</li>
+    </ul>
+
+    <h2>2. Purpose and Usage of Data</h2>
+    <p>Collected information is strictly used for the following operational requirements:</p>
+    <ul>
+      <li>Facilitating closed-loop Circle rosters and displaying live venue statuses among approved members.</li>
+      <li>Dispatching push notifications for check-in events and safe home arrival alerts.</li>
+      <li>Generating session drink pacing summaries and historical nightlife receipts.</li>
+      <li>Preventing abuse, maintaining session security, and authenticating user identities.</li>
+    </ul>
+
+    <h2>3. Third-Party Infrastructure</h2>
+    <p>Data collected through Rounds is processed and stored using industry-standard backend infrastructure:</p>
+    <ul>
+      <li><strong>Supabase:</strong> Encrypted PostgreSQL database hosting, row-level security (RLS), and authentication services.</li>
+      <li><strong>Expo Application Services (EAS):</strong> Routing encrypted push notification payloads to Apple Push Notification service (APNs) and Firebase Cloud Messaging (FCM).</li>
+    </ul>
+    <p>We do not sell, rent, or monetize your personal data with third-party advertisers or data brokers.</p>
+
+    <h2>4. Data Retention and Account Deletion</h2>
+    <p>
+      In accordance with Apple App Store Guideline 5.1.1 and Google Play User Data policies, users maintain full control over their personal data:
+    </p>
+    <ul>
+      <li><strong>In-App Deletion:</strong> You can permanently delete your account and all associated data directly within the application by navigating to <em>Settings &gt; Delete Account</em>.</li>
+      <li><strong>Immediate Purge:</strong> Initiating deletion immediately wipes your profile, circle memberships, historic receipts, active check-ins, and push tokens from our primary database tables.</li>
+      <li><strong>Manual Requests:</strong> You may also request account erasure by contacting our privacy coordinator at <a href="mailto:support@tgwsoftware.com">support@tgwsoftware.com</a>.</li>
+    </ul>
+
+    <h2>5. Security</h2>
+    <p>
+      All data transmissions between the Rounds mobile client and our servers are encrypted using Transport Layer Security (TLS/HTTPS). Database access is protected by granular row-level security policies ensuring circle activity is accessible only by verified members of that circle.
+    </p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy or your data, contact:</p>
+    <p>
+      <strong>TGW Software</strong><br />
+      Email: <a href="mailto:support@tgwsoftware.com">support@tgwsoftware.com</a><br />
+      Website: <a href="https://tgwsoftware.com" target="_blank">tgwsoftware.com</a>
+    </p>
+  </div>
+</body>
+</html>
