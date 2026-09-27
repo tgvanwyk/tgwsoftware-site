@@ -55,13 +55,21 @@
     }
   </style>
 </head>
-<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-teal-500 selection:text-white">
+<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-teal-500 selection:text-white relative">
 
-  <!-- Ambient Glow & Subtle Background Grid -->
+  <!-- Ambient Glow & Background Grid Texture -->
   <div class="fixed inset-0 gradient-glow pointer-events-none z-0"></div>
   <div class="fixed inset-0 grid-pattern pointer-events-none z-0"></div>
 
-  <!-- Primary Wrapper -->
+  <!-- Floating WhatsApp Quick-Chat Button (SA Standard) -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <a href="https://wa.me/27XXXXXXXXX?text=Hi%20Theunis,%20I'm%20interested%20in%20a%20software%20project%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-400 text-gray-950 px-4 py-3 rounded-full font-bold shadow-2xl flex items-center space-x-2.5 transition-all transform hover:scale-105 border border-emerald-300/30">
+      <i class="ph ph-whatsapp-logo text-2xl font-bold"></i>
+      <span class="text-sm font-semibold pr-1">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Primary Layout Container -->
   <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 py-8 flex flex-col min-h-screen justify-between">
 
     <!-- Top Navigation Bar -->
@@ -78,10 +86,11 @@
 
       <!-- Desktop Nav Links -->
       <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
-        <a href="#solutions" class="hover:text-teal-400 transition-colors">Solutions</a>
+        <a href="#work" class="hover:text-teal-400 transition-colors">Recent Work</a>
+        <a href="#pricing" class="hover:text-teal-400 transition-colors">Pricing</a>
         <a href="#capabilities" class="hover:text-teal-400 transition-colors">Capabilities</a>
         <a href="#process" class="hover:text-teal-400 transition-colors">How We Work</a>
-        <a href="#contact" class="bg-teal-500 hover:bg-teal-400 text-gray-950 px-4 py-2 rounded-lg font-semibold transition-colors shadow-sm">Start a Project</a>
+        <a href="#booking" class="bg-teal-500 hover:bg-teal-400 text-gray-950 px-4 py-2 rounded-lg font-semibold transition-colors shadow-sm">Book 15-Min Call</a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -92,10 +101,11 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mb-12 p-6 bg-gray-900/95 border border-gray-800 rounded-2xl backdrop-blur">
-      <a href="#solutions" class="text-gray-300 hover:text-teal-400 transition mobile-link">Solutions</a>
+      <a href="#work" class="text-gray-300 hover:text-teal-400 transition mobile-link">Recent Work</a>
+      <a href="#pricing" class="text-gray-300 hover:text-teal-400 transition mobile-link">Pricing</a>
       <a href="#capabilities" class="text-gray-300 hover:text-teal-400 transition mobile-link">Capabilities</a>
       <a href="#process" class="text-gray-300 hover:text-teal-400 transition mobile-link">How We Work</a>
-      <a href="#contact" class="inline-block text-center bg-teal-500 hover:bg-teal-400 text-gray-950 py-2.5 rounded-lg font-semibold transition mobile-link">Start a Project</a>
+      <a href="#booking" class="inline-block text-center bg-teal-500 hover:bg-teal-400 text-gray-950 py-2.5 rounded-lg font-semibold transition mobile-link">Book 15-Min Call</a>
     </div>
 
     <!-- Hero Section -->
@@ -109,27 +119,27 @@
           Software engineered to solve costly operational friction.
         </h1>
         <p class="text-lg text-gray-300 leading-relaxed mb-8">
-          We design and build custom mobile applications, automated document processing engines, and real-time operational platforms that eliminate manual administration and let your team execute without errors.
+          We build practical mobile applications, WhatsApp automation pipelines, and real-time operational platforms that eliminate manual data capture and let your business scale without human errors.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#contact" class="bg-teal-500 hover:bg-teal-400 text-gray-950 px-6 py-3.5 rounded-lg font-bold transition flex items-center space-x-2 shadow-lg shadow-teal-500/10">
-            <span>Discuss Your Project</span>
-            <i class="ph ph-arrow-right font-bold"></i>
+          <a href="#booking" class="bg-teal-500 hover:bg-teal-400 text-gray-950 px-6 py-3.5 rounded-lg font-bold transition flex items-center space-x-2 shadow-lg shadow-teal-500/10">
+            <span>Book a 15-Min Audit</span>
+            <i class="ph ph-calendar-check font-bold"></i>
           </a>
-          <a href="#solutions" class="bg-gray-900/80 hover:bg-gray-800 text-gray-200 border border-gray-700/80 px-6 py-3.5 rounded-lg font-medium transition flex items-center space-x-2">
-            <span>Explore Solutions</span>
+          <a href="#work" class="bg-gray-900/80 hover:bg-gray-800 text-gray-200 border border-gray-700/80 px-6 py-3.5 rounded-lg font-medium transition flex items-center space-x-2">
+            <span>View Recent Work</span>
           </a>
         </div>
       </div>
 
-      <!-- Live Operations & Telemetry Card (Replaces Code Block) -->
+      <!-- Live Operations Card -->
       <div class="lg:col-span-5">
         <div class="bg-gray-900/90 rounded-2xl border border-gray-800 p-6 shadow-2xl backdrop-blur">
           
           <div class="flex items-center justify-between pb-4 border-b border-gray-800 mb-5">
             <div class="flex items-center space-x-2.5">
               <span class="w-2.5 h-2.5 rounded-full bg-teal-400 animate-pulse"></span>
-              <span class="text-xs font-mono font-bold text-white uppercase tracking-wider">Operational Overview</span>
+              <span class="text-xs font-mono font-bold text-white uppercase tracking-wider">Active Deployments</span>
             </div>
             <span class="text-[11px] font-mono text-teal-400 bg-teal-950 border border-teal-500/30 px-2 py-0.5 rounded">High Reliability</span>
           </div>
@@ -143,7 +153,7 @@
                 </div>
                 <div>
                   <div class="font-semibold text-white">WhatsApp Voice-to-PDF</div>
-                  <div class="text-[11px] text-gray-400">Audio & text transcribed to PDF</div>
+                  <div class="text-[11px] text-gray-400">Audio transcribed &bull; Branded PDF</div>
                 </div>
               </div>
               <span class="font-mono text-teal-400 font-bold">&lt; 3.2s</span>
@@ -168,15 +178,15 @@
                   <i class="ph ph-chart-line-up"></i>
                 </div>
                 <div>
-                  <div class="font-semibold text-white">Equipment Downtime Tracker</div>
-                  <div class="text-[11px] text-gray-400">Field app &bull; Centralized SQL</div>
+                  <div class="font-semibold text-white">Machinery Downtime Tracker</div>
+                  <div class="text-[11px] text-gray-400">Field app &bull; Central SQL DB</div>
                 </div>
               </div>
               <span class="font-mono text-teal-400 font-bold">Live Stream</span>
             </div>
           </div>
 
-          <!-- Bottom Assurance Badge -->
+          <!-- Direct Assurance Badge -->
           <div class="mt-5 pt-4 border-t border-gray-800/80 flex items-center justify-between text-[11px] text-gray-400 font-mono">
             <span>Direct Principal Engineering</span>
             <span class="text-white font-bold">Zero Agency Bloat</span>
@@ -198,7 +208,7 @@
           <div class="text-teal-400 text-2xl mb-4"><i class="ph ph-chats-circle"></i></div>
           <h4 class="text-lg font-bold text-white mb-2">Field Teams Disconnected?</h4>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Stop forcing field workers to fill out clunky desktop forms. We build mobile-first capture tools and WhatsApp integrations that fit directly into daily habits.
+            Stop forcing staff to navigate clunky desktop portals. We engineer mobile-first capture tools and WhatsApp interfaces that match natural field habits.
           </p>
         </div>
 
@@ -206,7 +216,7 @@
           <div class="text-teal-400 text-2xl mb-4"><i class="ph ph-table"></i></div>
           <h4 class="text-lg font-bold text-white mb-2">Drowning in Fragile Spreadsheets?</h4>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Multi-tab spreadsheets lead to version collisions and lost records. We convert manual data capture into automated pipelines and centralized relational databases.
+            Messy multi-tab Excel sheets create version errors and data loss. We transform manual entry into automated pipelines and robust SQL databases.
           </p>
         </div>
 
@@ -214,25 +224,25 @@
           <div class="text-teal-400 text-2xl mb-4"><i class="ph ph-hourglass-high"></i></div>
           <h4 class="text-lg font-bold text-white mb-2">Hours Lost on Manual Ingestion?</h4>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Reviewing dense contracts, extracting line items, or compiling site reports by hand wastes billable hours. We automate document parsing with verified accuracy.
+            Reviewing dense contractor agreements, invoices, or site logs by hand drains billable hours. We automate document parsing with verified page citations.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Proven Solutions / Portfolio Grid -->
-    <section id="solutions" class="mb-28">
+    <!-- Recent Work / Case Studies Showcase -->
+    <section id="work" class="mb-28">
       <div class="mb-12">
-        <h2 class="text-xs uppercase font-mono tracking-widest text-teal-400 mb-2">Proven Deployments</h2>
-        <h3 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Systems Built for Execution</h3>
+        <h2 class="text-xs uppercase font-mono tracking-widest text-teal-400 mb-2">Recent Work</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Real Systems in Production</h3>
         <p class="text-gray-400 text-sm mt-2 max-w-xl">
-          From conversational automation on WhatsApp to native mobile apps and industrial telemetry dashboards.
+          Direct engineering case studies showing working architectures, real screenshots, and production code.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- Solution 1: WhatsApp Voice-to-PDF -->
+        <!-- Project 1: WhatsApp Voice-to-PDF -->
         <div class="bg-gray-900/60 hover:bg-gray-900/90 rounded-2xl border border-gray-800 hover:border-teal-500/40 p-8 flex flex-col justify-between transition-all">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -241,80 +251,80 @@
               </span>
               <span class="text-gray-500 text-xs font-mono">Zero App Install</span>
             </div>
-            <h4 class="text-xl font-bold text-white mb-2">WhatsApp Voice-to-PDF Engine</h4>
+            <h4 class="text-2xl font-bold text-white mb-2">WhatsApp Voice-to-PDF Pipeline</h4>
             <p class="text-gray-300 text-sm leading-relaxed mb-6">
-              Enables field supervisors and contractors to record a voice note or send brief bullet points on WhatsApp. An intelligent backend parses, structures, and compiles the audio into a formatted, branded PDF job card or report delivered back in seconds.
+              Solves the daily friction of field workers refusing to type up administrative paperwork. A team member sends a 30-second WhatsApp voice note on site; our cloud backend transcribes the audio, extracts structured deliverables, and compiles a branded PDF job card or site report returned via WhatsApp in seconds.
             </p>
           </div>
           <div>
             <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-400 mb-6">
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">WhatsApp API</span>
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Audio Transcription</span>
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">PDF Generation</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">WhatsApp Cloud API</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Whisper Transcription</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">ReportLab PDF</span>
             </div>
-            <a href="#contact" class="text-xs font-mono text-white hover:text-teal-400 inline-flex items-center space-x-1.5 transition">
-              <span>Discuss Custom Pipeline</span>
+            <a href="https://wa.me/27XXXXXXXXX?text=Hi%20Theunis,%20I'd%20like%20to%20see%20a%20demo%20of%20the%20WhatsApp%20Voice-to-PDF%20pipeline." target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-white hover:text-teal-400 inline-flex items-center space-x-1.5 transition">
+              <span>Request Pipeline Demo</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
         </div>
 
-        <!-- Solution 2: Rounds App -->
+        <!-- Project 2: Rounds Mobile Platform -->
         <div class="bg-gray-900/60 hover:bg-gray-900/90 rounded-2xl border border-gray-800 hover:border-teal-500/40 p-8 flex flex-col justify-between transition-all">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-[11px] bg-teal-950 text-teal-300 border border-teal-500/30 px-3 py-1 rounded-full font-mono uppercase tracking-wider">
-                Cross-Platform Mobile App
+                Consumer Mobile App
               </span>
               <span class="text-gray-500 text-xs font-mono">iOS & Android</span>
             </div>
-            <h4 class="text-xl font-bold text-white mb-2">Rounds: Live Activity & Session Tracker</h4>
+            <h4 class="text-2xl font-bold text-white mb-2">Rounds: Live Venue & Activity Tracker</h4>
             <p class="text-gray-300 text-sm leading-relaxed mb-6">
-              A consumer-grade mobile application built with React Native and Expo Router. Incorporates instant GPS check-ins, automated OTP phone verification, synchronized live feeds, and backend PostgreSQL session storage via Supabase.
+              A responsive, high-performance social habit tracking application. Built with React Native and Expo Router, featuring GPS-verified check-ins, automated 6-digit OTP phone authentication, synchronized live activity feeds, and real-time PostgreSQL database storage on Supabase.
             </p>
           </div>
           <div>
             <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-400 mb-6">
               <span class="bg-gray-800/80 px-2.5 py-1 rounded">React Native</span>
               <span class="bg-gray-800/80 px-2.5 py-1 rounded">Expo Router</span>
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Supabase Backend</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Supabase / Postgres</span>
               <span class="bg-gray-800/80 px-2.5 py-1 rounded">GPS Telemetry</span>
             </div>
-            <a href="#contact" class="text-xs font-mono text-white hover:text-teal-400 inline-flex items-center space-x-1.5 transition">
-              <span>Build a Mobile Product</span>
+            <a href="#booking" class="text-xs font-mono text-white hover:text-teal-400 inline-flex items-center space-x-1.5 transition">
+              <span>Discuss Mobile Build</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
         </div>
 
-        <!-- Solution 3: Fleet & Heavy Equipment Downtime Tracker -->
+        <!-- Project 3: Fleet Downtime Tracker -->
         <div class="bg-gray-900/60 hover:bg-gray-900/90 rounded-2xl border border-gray-800 hover:border-teal-500/40 p-8 flex flex-col justify-between transition-all">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-[11px] bg-teal-950 text-teal-300 border border-teal-500/30 px-3 py-1 rounded-full font-mono uppercase tracking-wider">
                 Industrial Telemetry
               </span>
-              <span class="text-gray-500 text-xs font-mono">Mobile + Web</span>
+              <span class="text-gray-500 text-xs font-mono">Mobile + Web Portal</span>
             </div>
-            <h4 class="text-xl font-bold text-white mb-2">Fleet & Machinery Downtime Tracker</h4>
+            <h4 class="text-2xl font-bold text-white mb-2">Fleet & Machinery Downtime Tracker</h4>
             <p class="text-gray-300 text-sm leading-relaxed mb-6">
-              A high-utility operations system designed to capture mechanical stoppages on site. Features an Android field app that syncs incident logs to a centralized SQL database and an executive availability dashboard with real-time downtime analytics.
+              Eliminates paper-based breakdown logs in industrial operations. Floor technicians log mechanical failures and maintenance hours via an Android tool, instantly synchronizing records with a central SQL database and an executive availability dashboard displaying live downtime telemetry.
             </p>
           </div>
           <div>
             <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-400 mb-6">
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Field Logging App</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Android Field Tool</span>
               <span class="bg-gray-800/80 px-2.5 py-1 rounded">Executive Dashboard</span>
               <span class="bg-gray-800/80 px-2.5 py-1 rounded">Relational SQL</span>
             </div>
-            <a href="#contact" class="text-xs font-mono text-white hover:text-teal-400 inline-flex items-center space-x-1.5 transition">
-              <span>Request Dashboard Demo</span>
+            <a href="#booking" class="text-xs font-mono text-white hover:text-teal-400 inline-flex items-center space-x-1.5 transition">
+              <span>Explore Architecture</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
         </div>
 
-        <!-- Solution 4: The Contract Simplifier -->
+        <!-- Project 4: The Contract Simplifier -->
         <div class="bg-gray-900/60 hover:bg-gray-900/90 rounded-2xl border border-gray-800 hover:border-teal-500/40 p-8 flex flex-col justify-between transition-all">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -323,19 +333,20 @@
               </span>
               <span class="text-gray-500 text-xs font-mono">Citation Engine</span>
             </div>
-            <h4 class="text-xl font-bold text-white mb-2">The Contract Simplifier</h4>
+            <h4 class="text-2xl font-bold text-white mb-2">The Contract Simplifier</h4>
             <p class="text-gray-300 text-sm leading-relaxed mb-6">
-              An intelligent document auditing assistant that analyzes commercial leases and vendor contracts. Pinpoints buried financial liabilities, termination clauses, and indemnity traps while providing verifiable, page-level visual citations in the source document.
+              On-device document intelligence software engineered to parse dense commercial leases and vendor contracts. Pinpoints buried financial penalties, uncapped liabilities, and automatic renewal dates, providing direct page-level visual citations in the source PDF.
             </p>
           </div>
           <div>
             <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-400 mb-6">
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Risk Extraction</span>
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">PDF Parsing</span>
-              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Citation Engine</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Python</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">Flet Android</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">pypdfium2</span>
+              <span class="bg-gray-800/80 px-2.5 py-1 rounded">OpenAI API</span>
             </div>
             <a href="https://tgvanwyk.github.io/contract-simplifier-legal/" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-white hover:text-teal-400 inline-flex items-center space-x-1.5 transition">
-              <span>View Compliance Docs</span>
+              <span>View Compliance Portal</span>
               <i class="ph ph-arrow-up-right"></i>
             </a>
           </div>
@@ -344,7 +355,89 @@
       </div>
     </section>
 
-    <!-- Core Capabilities / Services -->
+    <!-- Transparent Pricing Section -->
+    <section id="pricing" class="mb-28">
+      <div class="mb-12 text-center max-w-2xl mx-auto">
+        <h2 class="text-xs uppercase font-mono tracking-widest text-teal-400 mb-2">Transparent Engagements</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Clear Pricing &bull; Zero Agency Markup</h3>
+        <p class="text-gray-400 text-sm mt-3">
+          Predictable milestones for South African businesses looking for high-return software solutions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1: Automations & Pipelines -->
+        <div class="bg-gray-900/60 p-8 rounded-2xl border border-gray-800 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-wider text-teal-400 block mb-2">Automation & Scripting</span>
+            <div class="text-3xl font-extrabold text-white mb-1">From R5,000</div>
+            <p class="text-gray-500 text-xs font-mono mb-6">Single-objective operational pipeline</p>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+              Ideal for replacing repetitive manual administration with a dependable, automated script or chat integration.
+            </p>
+            <ul class="text-xs text-gray-400 space-y-3 font-mono mb-8 border-t border-gray-800 pt-6">
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>WhatsApp bot or voice ingestion</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Automated PDF report generation</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Excel &rarr; Database migration script</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>1–2 week turnaround</span></li>
+            </ul>
+          </div>
+          <a href="#booking" class="w-full text-center bg-gray-800 hover:bg-gray-700 text-white font-mono text-xs font-bold py-3 rounded-lg border border-gray-700 transition">
+            Book Workflow Audit
+          </a>
+        </div>
+
+        <!-- Tier 2: Bespoke Internal Apps (Highlighted) -->
+        <div class="bg-gradient-to-b from-gray-900 via-gray-900 to-gray-950 p-8 rounded-2xl border-2 border-teal-500/60 flex flex-col justify-between shadow-2xl relative">
+          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-teal-500 text-gray-950 px-3 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <span class="text-xs font-mono uppercase tracking-wider text-teal-400 block mb-2">Dedicated Applications</span>
+            <div class="text-3xl font-extrabold text-white mb-1">From R15,000</div>
+            <p class="text-gray-500 text-xs font-mono mb-6">Production-ready operational software</p>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+              Custom-built Android/iOS tools or web portals tailored to exact business workflows, backed by real-time SQL databases.
+            </p>
+            <ul class="text-xs text-gray-300 space-y-3 font-mono mb-8 border-t border-gray-800 pt-6">
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Cross-platform mobile or web portal</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Secure authentication & user roles</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Central SQL database architecture</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Executive telemetry dashboard</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Full documentation & handover</span></li>
+            </ul>
+          </div>
+          <a href="#booking" class="w-full text-center bg-teal-500 hover:bg-teal-400 text-gray-950 font-mono text-xs font-bold py-3.5 rounded-lg transition shadow-lg shadow-teal-500/20">
+            Start Project Discussion
+          </a>
+        </div>
+
+        <!-- Tier 3: Custom Architecture & Retainers -->
+        <div class="bg-gray-900/60 p-8 rounded-2xl border border-gray-800 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-wider text-teal-400 block mb-2">Enterprise & Retainers</span>
+            <div class="text-3xl font-extrabold text-white mb-1">Custom Scope</div>
+            <p class="text-gray-500 text-xs font-mono mb-6">Tailored architecture & ongoing support</p>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+              End-to-end engineering for complex multi-system environments, proprietary AI models, and mission-critical uptime needs.
+            </p>
+            <ul class="text-xs text-gray-400 space-y-3 font-mono mb-8 border-t border-gray-800 pt-6">
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Custom AI & document parsing engines</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Legacy ERP & accounting integrations</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Ongoing feature sprint retainers</span></li>
+              <li class="flex items-center space-x-2"><i class="ph ph-check text-teal-400"></i><span>Priority SLA maintenance</span></li>
+            </ul>
+          </div>
+          <a href="#booking" class="w-full text-center bg-gray-800 hover:bg-gray-700 text-white font-mono text-xs font-bold py-3 rounded-lg border border-gray-700 transition">
+            Request Architecture Call
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Capabilities / Services Overview -->
     <section id="capabilities" class="mb-28">
       <div class="mb-12">
         <h2 class="text-xs uppercase font-mono tracking-widest text-teal-400 mb-2">Capabilities</h2>
@@ -362,7 +455,7 @@
           </p>
           <ul class="text-xs text-gray-400 space-y-2 font-mono">
             <li class="flex items-center space-x-2"><span class="text-teal-400">&bull;</span><span>React Native & Native Android Tools</span></li>
-            <li class="flex items-center space-x-2"><span class="text-teal-400">&bull;</span><span>Offline-First Architectures</span></li>
+            <li class="flex items-center space-x-2"><span class="text-teal-400">&bull;</span><span>Offline-First Field Architectures</span></li>
           </ul>
         </div>
 
@@ -419,39 +512,53 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-gray-900/40 p-7 rounded-2xl border border-gray-800">
-          <div class="text-teal-400 font-mono text-xl font-bold mb-3">01. Discovery</div>
-          <p class="text-gray-300 text-sm leading-relaxed">We audit current technical bottlenecks, define data contracts, and establish strict scope without agency bloat.</p>
+          <div class="text-teal-400 font-mono text-xl font-bold mb-3">01. Discovery Audit</div>
+          <p class="text-gray-300 text-sm leading-relaxed">We audit your current bottlenecks, map data contracts, and establish a strict project scope without bloated retainer packages.</p>
         </div>
         <div class="bg-gray-900/40 p-7 rounded-2xl border border-gray-800">
           <div class="text-teal-400 font-mono text-xl font-bold mb-3">02. Engineering</div>
           <p class="text-gray-300 text-sm leading-relaxed">We build validated prototypes and production pipelines featuring structured error handling and fast runtimes.</p>
         </div>
         <div class="bg-gray-900/40 p-7 rounded-2xl border border-gray-800">
-          <div class="text-teal-400 font-mono text-xl font-bold mb-3">03. Handover</div>
+          <div class="text-teal-400 font-mono text-xl font-bold mb-3">03. Handover & SLA</div>
           <p class="text-gray-300 text-sm leading-relaxed">We deploy reliable infrastructure, supply documentation, and provide direct technical support as operations scale.</p>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Project Intake Form (Configured for Web3Forms) -->
-    <section id="contact" class="bg-gray-900/80 p-8 sm:p-12 rounded-2xl border border-gray-800 mb-16 relative overflow-hidden">
-      <div class="max-w-2xl mx-auto">
-        <div class="text-center mb-10">
-          <h3 class="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight">Start a Technical Discussion</h3>
-          <p class="text-gray-400 text-sm leading-relaxed">
-            Submit your project specifications or operational requirements below. Inquiries route directly to our engineering team.
+    <!-- Project Intake & Calendly Booking Section -->
+    <section id="booking" class="bg-gray-900/80 p-8 sm:p-12 rounded-2xl border border-gray-800 mb-16 relative overflow-hidden">
+      <div class="max-w-3xl mx-auto">
+        
+        <!-- Calendly Direct Booking Banner -->
+        <div class="bg-gradient-to-r from-teal-950/80 via-gray-950 to-gray-950 p-6 sm:p-8 rounded-2xl border border-teal-500/30 text-center mb-12">
+          <span class="text-xs font-mono uppercase tracking-widest text-teal-400 block mb-2">Fastest Response</span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2 tracking-tight">Book a 15-Minute Technical Call</h3>
+          <p class="text-gray-300 text-sm max-w-lg mx-auto mb-6">
+            Skip the back-and-forth emails. Pick a direct slot on our calendar to discuss your operational requirements and timeline.
+          </p>
+          <a href="https://calendly.com/YOUR_CALENDLY_USERNAME/15min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-teal-500 hover:bg-teal-400 text-gray-950 px-8 py-3.5 rounded-xl font-bold transition shadow-lg shadow-teal-500/20">
+            <i class="ph ph-calendar-check text-lg"></i>
+            <span>Schedule 15-Min Audit on Calendly</span>
+          </a>
+        </div>
+
+        <!-- Form Fallback -->
+        <div class="text-center mb-8">
+          <h4 class="text-lg font-bold text-white mb-1">Prefer to send a project brief first?</h4>
+          <p class="text-gray-400 text-xs">
+            Submit your specifications below. We review all technical requirements and respond via email within 24 hours.
           </p>
         </div>
 
         <form id="project-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-          <!-- Web3Forms Integration Config -->
           <input type="hidden" name="access_key" value="cef19d25-894f-4c6f-99a2-19d779416c9d" />
           <input type="hidden" name="subject" value="New Technical Inquiry - TGW Software" />
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label for="name" class="block text-xs font-mono text-gray-300 uppercase tracking-wider mb-2">Name / Organization</label>
+              <label for="name" class="block text-xs font-mono text-gray-300 uppercase tracking-wider mb-2">Name / Business</label>
               <input type="text" id="name" name="name" required placeholder="John Doe" class="w-full bg-gray-950/70 border border-gray-800 rounded-xl px-4 py-3 text-white text-sm placeholder-gray-600 focus:outline-none focus:border-teal-500 transition" />
             </div>
             <div>
@@ -463,8 +570,8 @@
           <div>
             <label for="service-type" class="block text-xs font-mono text-gray-300 uppercase tracking-wider mb-2">Project Classification</label>
             <select id="service-type" name="service_type" class="w-full bg-gray-950/70 border border-gray-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-teal-500 transition">
-              <option value="WhatsApp / Workflow Automation">WhatsApp Ingestion & Workflow Automation</option>
-              <option value="Mobile / Web Application">Custom Mobile or Desktop Application</option>
+              <option value="WhatsApp / Workflow Automation">WhatsApp Ingestion & Workflow Automation (From R5,000)</option>
+              <option value="Mobile / Web Application">Bespoke Mobile or Web Portal (From R15,000)</option>
               <option value="Document AI & Extraction">Document AI & Intelligent PDF Extraction</option>
               <option value="Operational Telemetry & Dashboards">Fleet & Operational Telemetry Dashboard</option>
               <option value="General Inquiry">General Technical Consultation</option>
@@ -490,7 +597,7 @@
           </div>
         </form>
 
-        <!-- Direct Email Fallback (No Socials) -->
+        <!-- Direct Email Fallback -->
         <div class="pt-8 mt-8 border-t border-gray-800/80 text-center">
           <p class="text-xs text-gray-400 mb-3">Prefer standard email correspondence?</p>
           <div class="inline-flex items-center gap-3">
@@ -542,7 +649,7 @@
       });
     });
 
-    // One-Click Email Copy to Clipboard
+    // Copy Email to Clipboard
     const copyBtn = document.getElementById('copy-btn');
     const copyText = document.getElementById('copy-text');
 
@@ -555,7 +662,7 @@
       });
     });
 
-    // Asynchronous Web3Forms Handling
+    // Asynchronous Web3Forms Submission
     const projectForm = document.getElementById('project-form');
     const submitBtn = document.getElementById('submit-btn');
     const submitText = document.getElementById('submit-text');
